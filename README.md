@@ -1,4 +1,4 @@
-# Nano-Basics-scripting
+# 👨‍💻​ Nano-Basics-scripting
 Welcome to the beginner's guide to writing scripts using Nano, the most accessible text editor in the Linux terminal. Whether you're automating your workflow or just getting comfortable with the command line, this repository covers the essentials.
 
 ## Opening or Creating a File
@@ -17,7 +17,7 @@ Ctrl + K	Cut Text	Deletes the current line (and saves it to the "buffer").
 Ctrl + U	Uncut Text	Pastes the line you just cut.
 ```
 
-## Writing Your First Script
+## 📘​ Writing Your First Script
 A basic script requires two things: a Shebang and Execute Permissions.
 1. The Shebang
 ```bash
@@ -33,12 +33,12 @@ read name
 echo "Hello, $name! You are scripting in Nano."
 ```
 
-## Save and Exit
+## 💾​ Save and Exit
 3. Save and exit nano with the shortcuts.
 Press Ctrl + O then Enter to save.
 Press Ctrl + X to exit.
 
-## Running your script
+## ⚡​ Running your script
 4. Before you can run the script, you must tell Linux it's an executable file using chmod.
 ```bash
 # Make the file executable
