@@ -49,7 +49,7 @@ chmod +x myscript.sh
 ./myscript.sh
 ```
 </br>
-</br>
+
 # 📜​ Create an Menu script
 ### 1. Create a header with the nessacary information such as name, version and autor.
 ```bash
