@@ -48,6 +48,91 @@ chmod +x myscript.sh
 ./myscript.shbash
 ```
 
+# 📜​ Create an Menu script to easy access most used functions
+## 1. Create a header with the nessacary information such as name, version and autor.
+```bash
+#!/bin/bash
+ 2 #------------------------------------------------------------------------- 
+ 3 # Programm: Command Menu 
+ 4 # Beschreibung: Zeigt am meisten gebrauchte Commands in einem Menu
+ 5 # Aufruf: 
+ 6 # Optionen: 
+ 7 # Parameter: 
+ 8 # Autor: Luke
+ 9 # Version: 1.0
+10 # Datum: 2026-02-10
+11 # Aenderung: 
+12 # Aenderungsdatum: 2026-02-10
+13 #-------------------------------------------------------------------------
+14 # LOADING STATION:
+15 #
+16 # ------------------------------------------
+```
+
+## 2. Create the Menu that the script should write out when you start the scritp
+```bash
+echo "Hauptmenü"
+echo "-----------------------------"
+echo "1. Aktueller Benutzername"
+echo "2. Aktuelles Datum"
+echo "3. Freie Festplattenkapazität"
+echo "4. Meine IP-Adresse ausgeben"
+echo "5. Letzte System Logs anzeigen"
+echo "6. Programm beenden"
+echo "7. Error messages suchen"
+echo "8. System Update"
+echo "-----------------------------"
+```
+
+## 3. Create the script to ask which Nummber you want to choose of the Menu
+```bash
+read -p "Bitte eine Zahl eingeben: " wahl
+```
+
+## 4. Create the options with "wahl"
+```bash
+case $wahl in
+  1)
+    echo "Benutzername: $USER"
+    ;;
+  2)
+    echo "Datum: $(date)"
+    ;;
+  3)
+    echo "Festplattenkapazität:"
+    df -h
+    ;;
+  4)
+    echo "4. Meine IP-Adresse:"
+    hostname -I
+    ;;
+  5)
+    echo "5. Letzte System Logs:"
+    journalctl -n 5
+    ;;
+  6)
+    echo "Tschüss"
+    exit
+    ;;
+  7)
+    read -p "Wie viele Zeilen willst du haben?" n
+    ;;
+  8)
+    echo "System wird aktualisiert"
+    sudo apt update
+    sudo apt upgrade -y
+    ;;
+```
+
+## 5. Add other numbers should send a statement and end the script
+```bash
+# create a sentence to say it need to be a number between 1 and 8.
+  *)
+    echo "Bitte eine Zahl zwischen 1 und 8 eingeben."
+    ;;
+# ends the script
+esac
+```
 
 
 
