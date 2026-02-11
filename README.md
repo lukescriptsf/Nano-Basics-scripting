@@ -46,7 +46,7 @@ Press Ctrl + X to exit.
 chmod +x myscript.sh
 
 # Run it!
-./myscript.shbash
+./myscript.sh
 ```
 
 # 📜​ Create an Menu script to easy access most used functions
