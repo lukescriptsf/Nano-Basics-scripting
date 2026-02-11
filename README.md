@@ -1,4 +1,4 @@
-# 👨‍💻​ Nano-Basics-scripting
+# 👨‍💻​ Nano-Basics-SH.scripting
 Welcome to the beginner's guide to writing scripts using Nano, the most accessible text editor in the Linux terminal. Whether you're automating your workflow or just getting comfortable with the command line, this repository covers the essentials.
 
 ## Opening or Creating a File
