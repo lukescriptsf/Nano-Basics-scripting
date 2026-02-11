@@ -15,6 +15,7 @@ Ctrl + O	Write Out	Saves the current file.
 Ctrl + X	Exit	Closes the editor (will ask to save if changes exist).
 Ctrl + K	Cut Text	Deletes the current line (and saves it to the "buffer").
 Ctrl + U	Uncut Text	Pastes the line you just cut.
+Ctrl + S Save your script.
 ```
 
 ## 📘​ Writing Your First Script
