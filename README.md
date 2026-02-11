@@ -69,7 +69,7 @@ chmod +x myscript.sh
 16 # ------------------------------------------
 ```
 
-## 2. Create the Menu that the script should write out when you start the scritp
+## 2. Create the Menu that the script should write out when you start the script
 ```bash
 echo "Hauptmenü"
 echo "-----------------------------"
